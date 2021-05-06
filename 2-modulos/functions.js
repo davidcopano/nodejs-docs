@@ -1,6 +1,6 @@
 // creamos un objeto Math, sin propiedades
 
-const Math = {};
+const math = {};
 
 // declaramos las funciones que se van a exportar en el objeto Math
 
@@ -26,11 +26,19 @@ function divide(x1, x2) {
 
 // asignamos al objeto Math las funciones de antes
 
-Math.add = add;
-Math.substract = substract;
-Math.multiply = multiply;
-Math.divide = divide;
+math.add = add;
+math.substract = substract;
+math.multiply = multiply;
+math.divide = divide;
 
 // con las palabras clave 'module.exports', exportamos el objeto Math para que pueda ser usado por otros archivos
 
-module.exports = Math;
+function hello(name) {
+  console.log('Hola ', name);
+}
+
+module.exports = {
+  math: math,
+  hello: hello,
+  variablePrueba: 'esto es una variable de prueba'
+};
