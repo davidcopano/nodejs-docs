@@ -34,7 +34,7 @@ math.divide = divide;
 // con las palabras clave 'module.exports', exportamos el objeto Math para que pueda ser usado por otros archivos
 
 function hello(name) {
-  console.log('Hola ', name);
+  console.log('Hola', name);
 }
 
 module.exports = {
