@@ -32,13 +32,15 @@ math.multiply = multiply;
 math.divide = divide;
 
 // con las palabras clave 'module.exports', exportamos el objeto Math para que pueda ser usado por otros archivos
+// con 'module.exports', podemos exportar múltiples tipos de variables (variables, funciones, objetos, arrays, etc)
 
 function hello(name) {
-  console.log('Hola,', name);
+  console.log('Hola', name);
 }
 
 module.exports = {
   math: math,
   hello: hello,
-  variablePrueba: 'esto es una variable de prueba'
+  variablePrueba: 'esto es una variable de prueba',
+  arrayPrueba: [1, 2, 3]
 };
