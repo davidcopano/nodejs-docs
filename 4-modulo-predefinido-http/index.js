@@ -1,13 +1,15 @@
 const http = require('http');
 
-http.createServer((req, res) => {
-  
-  console.log('request received:', req);
- 
+const handleServer = ((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/html' });
   res.write('<h1>Hola mundo desde Nodejs</h1>');
-  res.end();  
-}).listen(3000, 'localhost', () => {
-  console.log('listening');
+  res.end();
+});
+
+const server = http.createServer(handleServer);
+
+server.listen(3000, () => {
+  console.log('Listening on port 3000');
 });
 
 
