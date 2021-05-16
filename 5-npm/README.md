@@ -13,10 +13,10 @@ Esto creará un archivo llamado `package.json`, ahí se listaran las dependencia
 Para instalar un paquete concreto, usaremos uno de siguientes comandos:
 
 ```
-npm install <NOMBRE_PAQUETE> --save
+npm install <NOMBRE_PAQUETE>
 ```
 ```
-npm i <NOMBRE_PAQUETE> --save
+npm i <NOMBRE_PAQUETE>
 ```
 
 El último es una forma abreviada del primero. Este comando descargará el paquete desde Internet, y lo añadirá como dependencia en el archivo `package.json`.
@@ -24,11 +24,11 @@ El último es una forma abreviada del primero. Este comando descargará el paque
 Tras esto, en el código ya podremos importar y usar este paquete. Ejemplo:
 
 ```
-npm install colors --save
+npm install colors
 ``` 
 o 
 ```
-npm i colors --save
+npm i colors
 ```
 
 index.js:
