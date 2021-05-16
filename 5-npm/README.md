@@ -10,15 +10,26 @@ Esto creará un archivo llamado `package.json`, ahí se listaran las dependencia
 
 ---------
 
-Para instalar un paquete concreto, usaremos el siguiente comando:
+Para instalar un paquete concreto, usaremos uno de siguientes comandos:
 
-`npm install <NOMBRE_PAQUETE> --save`
+```
+npm install <NOMBRE_PAQUETE> --save
+```
+```
+npm i <NOMBRE_PAQUETE> --save
+```
 
-Este comando descargará el paquete desde Internet, y lo añadirá como dependencia en el archivo `package.json`.
+El último es una forma abreviada del primero. Este comando descargará el paquete desde Internet, y lo añadirá como dependencia en el archivo `package.json`.
 
 Tras esto, en el código ya podremos importar y usar este paquete. Ejemplo:
 
-`npm install colors --save`
+```
+npm install colors --save
+``` 
+o 
+```
+npm i colors --save
+```
 
 index.js:
 
@@ -32,8 +43,14 @@ console.log('Texto en verde'.green);
 
 ---------
 
-Si se quiere desplegar en el servidor o en otro PC el proyecto, se ejecuta el siguiente comando:
+Si se quiere desplegar en el servidor o en otro PC el proyecto, se ejecuta uno de los siguientes comandos:
 
-`npm install`
+```
+npm install
+```
+o
+```
+npm i
+```
 
-Este comando leerá el archivo package.json e instalará las dependencias de nuestro proyecto.
+Este comando leerá el archivo `package.json` e instalará las dependencias de nuestro proyecto.
