@@ -4,7 +4,7 @@
   "description": "En la web https://www.npmjs.com/ se encuentran los paquetes de JS/Node publicados por la comunidad",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",

@@ -1,39 +1,21 @@
-# NPM
+# Comandos personalizados NPM
 
-En la web https://www.npmjs.com/ se encuentran los paquetes de JS/Node publicados por la comunidad
+En el archivo `package.json` podemos definir comandos personalizados que podrán ejecutarse con NPM.
 
-Para utilizar NPM, podemos utilizar los siguientes comandos:
+Por ejemplo, si queremos iniciar un servidor HTTP, hacemos lo siguiente: 
 
-`npm init --yes` 
+Dentro del archivo `package.json`, en el apartado `scripts`, añadimos como clave el comando a poder ejecutar, y como valor, lo que se va a ejecutar cuando se lance el comando. 
 
-Esto creará un archivo llamado `package.json`, ahí se listaran las dependencias que tendrá el proyecto.
+Por ejemplo, si queremos iniciar el servidor HTTP con el comando `npm start`, hacemos lo siguiente:
 
----------
+package.json:
 
-Para instalar un paquete concreto, usaremos el siguiente comando:
-
-`npm install <NOMBRE_PAQUETE> --save`
-
-Este comando descargará el paquete desde Internet, y lo añadirá como dependencia en el archivo `package.json`.
-
-Tras esto, en el código ya podremos importar y usar este paquete. Ejemplo:
-
-`npm install colors --save`
-
-index.js:
-
-```js
+```json
 // ...
-const colors = require('colors');
+"scripts": {
+  "start": "node index.js"
+},
 // ...
-console.log('Texto en amarillo'.yellow);
-console.log('Texto en verde'.green);
 ```
 
----------
-
-Si se quiere desplegar en el servidor o en otro PC el proyecto, se ejecuta el siguiente comando:
-
-`npm install`
-
-Este comando leerá el archivo package.json e instalará las dependencias de nuestro proyecto.
+Tras esto, ya podemos ejecutar el comando `npm start` para iniciar el servidor HTTP
