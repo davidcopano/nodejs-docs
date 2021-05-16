@@ -19,3 +19,22 @@ package.json:
 ```
 
 Tras esto, ya podemos ejecutar el comando `npm start` para iniciar el servidor HTTP
+
+--------------
+
+**NOTA**: la palabra clave `start` ya la conoce NPM, es decir, que el comando `npm start` funcionará. Pero si queremos ejecutar otro comando llamado por ejemplo `npm desarrollo`, dará error. 
+
+Para poder ejecutar estos comandos que no son palabras clave reconocidas por NPM, ejecutaremos nuestro comando de esta forma:
+
+`npm run desarrollo`
+
+Nuestro archivo `package.json` quedaría de esta forma:
+
+```json
+// ...
+"scripts": {
+  "start": "node index.js",
+  "desarrollo": "node index.js"
+},
+// ...
+```

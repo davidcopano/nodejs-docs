@@ -4,7 +4,8 @@
   "description": "En la web https://www.npmjs.com/ se encuentran los paquetes de JS/Node publicados por la comunidad",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "desarrollo": "node index.js"
   },
   "keywords": [],
   "author": "",
